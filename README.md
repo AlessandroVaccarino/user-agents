@@ -16,8 +16,8 @@ It's possibile to integrate the repository within an existing code, simply by do
 import random
 import requests
 
-retrurn = requests.get('https://raw.githubusercontent.com/AlessandroVaccarino/user-agents/main/agents/desktop.txt')
-return_rows = retrurn.text.splitlines()
+return = requests.get('https://raw.githubusercontent.com/AlessandroVaccarino/user-agents/main/agents/desktop.txt')
+return_rows = return.text.splitlines()
 
 for _ in range(10):
     user_agent = random.choice(return_rows)
